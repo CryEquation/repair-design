@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/CryEquation/repair-design#readme",
   "devDependencies": {
-    "gulp": "^5.0.0"
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.77.6"
   },
   "dependencies": {
     "browser-sync": "^3.0.2"
