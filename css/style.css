@@ -538,6 +538,16 @@ img {
 .types__section-title {
   margin-bottom: 2rem;
 }
+.types__section-title__subtitle {
+  text-transform: none;
+  margin: 1rem auto;
+  max-width: 60rem;
+  text-align: center;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 1.42rem;
+  line-height: 1.92rem;
+  color: #363636;
+}
 
 .row {
   display: flex;
