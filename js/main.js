@@ -47,7 +47,7 @@ $(document).ready(function() {
     var prev = $('.swiper-button-prev');
     var bullets = $('.swiper-pagination');
 
-
+    new WOW().init();
 
 
 });
