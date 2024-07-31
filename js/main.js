@@ -48,7 +48,7 @@ $(document).ready(function() {
     var bullets = $('.swiper-pagination');
 
     new WOW().init();
-
+    //ВАЛИДАЦИЯ ФОРМЫ
     $('.modal__form').validate({
         errorClass: "invalid",
         rules: {
@@ -72,6 +72,18 @@ $(document).ready(function() {
                 required: "Обязательно укажите email",
                 email: "Введите в формате name@domain.com"
             }
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function(response) {
+                    alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            });
         }
     });
     $('.modal__control').validate({
