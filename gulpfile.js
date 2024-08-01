@@ -4,6 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 const minify = require('gulp-minify');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
+const autoprefixer = require('gulp-autoprefixer');
 const tinypng = require('gulp-tinypng-compress');
 
 function bs() {

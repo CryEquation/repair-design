@@ -168,4 +168,18 @@ $(document).ready(function() {
         myMap.geoObjects
             .add(myPlacemark);
     });
+    $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '465',
+            width: '100%',
+            videoId: 'vG2AyiNT23I',
+            events: {
+                'onReady': videoPlay,
+            }
+        });
+    })
+
+    function videoPlay(event) {
+        event.target.playVideo();
+    }
 });
