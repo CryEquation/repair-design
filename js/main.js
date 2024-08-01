@@ -82,6 +82,9 @@ $(document).ready(function() {
                     alert('Форма отправлена, мы свяжемся с вами через 10 минут');
                     $(form)[0].reset();
                     modal.removeClass('modal--visible');
+                },
+                error: function(response) {
+                    console.error('Ошибка запроса' + response);
                 }
             });
         }
